@@ -1,1 +1,25 @@
 
+# 1) 
+sdict = {'1': "Alice", '2': "Bob", '3': "Charlie", '4': "David"}
+sdict['3']='Charly'      #updating dictionary 
+print(sdict)
+sdict['5']='Andy'        #adding elemnt
+print(sdict)
+sdict.pop('2')           #deleting element
+print(sdict)
+
+#output---
+{'1': 'Alice', '2': 'Bob', '3': 'Charly', '4': 'David'}
+{'1': 'Alice', '2': 'Bob', '3': 'Charly', '4': 'David', '5': 'Andy'}
+{'1': 'Alice', '3': 'Charly', '4': 'David', '5': 'Andy'}
+
+
+
+# 2)
+roll_numbers = [1, 2, 3, 4]
+names = ["Alice", "Bob", "Charlie", "David"]
+students_dict = dict(zip(roll_numbers, names))
+print(students_dict)
+
+#output---
+{1: 'Alice', 2: 'Bob', 3: 'Charlie', 4: 'David'}
