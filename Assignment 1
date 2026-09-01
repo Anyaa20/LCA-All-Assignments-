@@ -77,3 +77,65 @@ Greatest Marks: 98
 Dev scored the highest marks: 98
 
 
+# 7) Calculating frequency of letters occuring in a given string 
+from collections import Counter
+
+text = "hello world"
+frequency = Counter(text)
+
+print(frequency)
+
+#output---
+Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1})
+
+
+#8) Program which takes numerator and denominator values from user and gives output as a tuple of quotient and remainder 
+numerator = int(input("Enter numerator: "))
+denominator = int(input("Enter denominator: "))
+
+quotient = numerator // denominator
+remainder = numerator % denominator
+
+result = (quotient, remainder)
+print("Quotient and Remainder:", result)
+
+
+# 9) 
+from datetime import date
+
+def input_date(label):
+    print(f"Enter {label} date:")
+    d = int(input("Day: "))
+    m = int(input("Month: "))
+    y = int(input("Year: "))
+    return (d, m, y)
+
+# Take two dates as tuples (d, m, y)
+date1 = input_date("first")
+date2 = input_date("second")
+
+# Convert tuples to date objects (note: date() takes year, month, day)
+d1 = date(date1[2], date1[1], date1[0])
+d2 = date(date2[2], date2[1], date2[0])
+
+# Calculate difference
+difference = abs((d2 - d1).days)
+
+print("Date 1:", date1)
+print("Date 2:", date2)
+print("Number of days between the two dates:", difference)
+
+#output---
+Enter first date:
+Day: 15
+Month: 8
+Year: 2023
+Enter second date:
+Day: 26
+Month: 1
+Year: 2024
+Date 1: (15, 8, 2023)
+Date 2: (26, 1, 2024)
+Number of days between the two dates: 164
+
+
