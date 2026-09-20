@@ -1,1 +1,42 @@
+#python program to create an array and perform addition of two mattrices.
 
+#input---
+import numpy as np
+
+# Create two matrices (2D arrays)
+matrix1 = np.array([[1, 2, 3],
+                     [4, 5, 6],
+                     [7, 8, 9]])
+
+matrix2 = np.array([[9, 8, 7],
+                     [6, 5, 4],
+                     [3, 2, 1]])
+
+# Add the two matrices
+result = matrix1 + matrix2
+
+print("Matrix 1:")
+print(matrix1)
+
+print("\nMatrix 2:")
+print(matrix2)
+
+print("\nSum of the two matrices:")
+print(result)
+
+
+#output---
+Matrix 1:
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+
+Matrix 2:
+[[9 8 7]
+ [6 5 4]
+ [3 2 1]]
+
+Sum of the two matrices:
+[[10 10 10]
+ [10 10 10]
+ [10 10 10]]
